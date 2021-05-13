@@ -3,7 +3,8 @@
 #include <SFML/Audio/Music.hpp>
 #include <iostream>
 #include <vector>
-#include <windows.h>
+//#include <windows.h>
+#include <unistd.h>
 #include <math.h>
 using namespace sf;
 using namespace std;
@@ -301,7 +302,7 @@ void tick(RenderWindow &window, vector <Cell> &SnakeList, int &direct, Apple &po
 	else {
 		window.draw(deadback);
 	}
-	Sleep(SPEED_GAME);
+	sleep(SPEED_GAME);
 }
 
 
